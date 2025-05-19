@@ -3,7 +3,12 @@ const mysql = require('mysql2/promise');
 const InventoryManager = require('./controllers/inventoryManage');
 
 (async () => {
-  const db = await mysql.createConnection({ host: '10.204.200.8', user: 'QAWtmta', password: 'QAWtmta8080%', database: 'wtmta' });
+  const db = await mysql.createConnection({
+    host: 'xxxxxxxx',
+    user: 'xxxxxxxx',
+    password: 'xxxxxxxxx',
+    database: 'wtmta'
+  });
   const inventoryManager = new InventoryManager(db);
 
   const server = http.createServer(async (req, res) => {
