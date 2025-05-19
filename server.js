@@ -7,7 +7,7 @@ const InventoryManager = require('./controllers/inventoryManage');
     host: 'xxxxxxxx',
     user: 'xxxxxxxx',
     password: 'xxxxxxxxx',
-    database: 'wtmta'
+    database: 'inventory_db'
   });
   const inventoryManager = new InventoryManager(db);
 
